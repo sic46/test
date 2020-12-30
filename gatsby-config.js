@@ -28,6 +28,16 @@ module.exports = {
         path: `${__dirname}/static/`
       }
     },
+       {
+      resolve: `gatsby-source-wordpress-experimental`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         * Example : 'https://www.example-site.com/graphql'
+         */
+        url: `http://windev.epizy.com/graphql`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
